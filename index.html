@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Smart Study Room</h1>
+
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#tasks">Tasks</a>
+    <a href="#notes">Notes</a>
+    <a href="#analytics">Analytics</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Virtual Study Room & Productivity Hub</h2>
+  <p>Study smarter, stay focused, and achieve your goals.</p>
+
+  <button onclick="joinRoom()">Join Study Room</button>
+</section>
+
+<section class="features" id="dashboard">
+
+  <div class="card">
+    <h3>Pomodoro Timer</h3>
+    <p>Boost focus with smart study sessions.</p>
+  </div>
+
+  <div class="card">
+    <h3>Task Manager</h3>
+    <p>Add and complete your tasks.</p>
+  </div>
+
+  <div class="card">
+    <h3>Virtual Room</h3>
+    <p>Join focus study sessions.</p>
+  </div>
+
+  <div class="card">
+    <h3>Analytics</h3>
+    <p>Track your productivity.</p>
+  </div>
+
+</section>
+
+<section class="timer-section">
+  <h2>Pomodoro Timer</h2>
+
+  <h1 id="timer">25:00</h1>
+
+  <button onclick="startTimer()">Start</button>
+  <button onclick="pauseTimer()">Pause</button>
+  <button onclick="resetTimer()">Reset</button>
+</section>
+
+<section class="task-section" id="tasks">
+  <h2>Task Manager</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter your task">
+
+  <button onclick="addTask()">Add Task</button>
+
+  <ul id="taskList"></ul>
+</section>
+
+<section class="notes-section" id="notes">
+  <h2>Quick Notes</h2>
+
+  <textarea id="notesBox" placeholder="Write your study notes here..."></textarea>
+
+  <button onclick="saveNotes()">Save Notes</button>
+</section>
+
+<section class="analytics-section" id="analytics">
+  <h2>Study Analytics</h2>
+
+  <div class="analytics-box">
+    <h3>Total Tasks Completed</h3>
+    <p id="completedTasks">0</p>
+  </div>
+
+  <div class="analytics-box">
+    <h3>Study Room Status</h3>
+    <p id="roomStatus">Not Joined</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

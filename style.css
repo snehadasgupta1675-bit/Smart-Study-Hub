@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(255,255,255,0.05);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.timer-section,
+.task-section,
+.notes-section,
+.analytics-section {
+  padding: 50px;
+  text-align: center;
+}
+
+#timer {
+  font-size: 5rem;
+  margin: 20px 0;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+textarea {
+  height: 150px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background: rgba(255,255,255,0.1);
+  margin: 10px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.analytics-box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 20px;
+}
